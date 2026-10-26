@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+  <title id="title">ARGUS Engine</title>
+  <desc id="desc">YOLO sees. Your AI understands. Detect, verify, understand.</desc>
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#0b1425"/><stop offset="1" stop-color="#172d3d"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#58dfb4"/><stop offset="1" stop-color="#75baff"/></linearGradient>
+  </defs>
+  <rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+  <g fill="none" stroke="#315061" stroke-width="1" opacity=".35">
+    <path d="M760 0v420M840 0v420M920 0v420M1000 0v420M1080 0v420M1160 0v420M1240 0v420"/>
+    <path d="M720 50h560M720 130h560M720 210h560M720 290h560M720 370h560"/>
+  </g>
+  <text x="65" y="77" font-family="Arial,Helvetica,sans-serif" font-size="14" letter-spacing="4" fill="#58dfb4">OPEN SOURCE VISION + REASONING</text>
+  <text x="60" y="165" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="76" letter-spacing="-2" fill="#f2f7fc">ARGUS ENGINE</text>
+  <text x="65" y="224" font-family="Arial,Helvetica,sans-serif" font-size="30" fill="#dce8f1">YOLO sees. Your AI understands.</text>
+  <text x="65" y="270" font-family="Arial,Helvetica,sans-serif" font-size="18" fill="#93aebf">Local tracking. Selected screenshots. Your own AI.</text>
+  <rect x="65" y="316" width="435" height="44" rx="22" fill="#58dfb4" fill-opacity=".1" stroke="#58dfb4" stroke-opacity=".35"/>
+  <text x="91" y="344" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="2" fill="#58dfb4">DETECT  /  VERIFY  /  UNDERSTAND</text>
+  <g fill="none" stroke="url(#accent)" stroke-width="3">
+    <rect x="837" y="90" width="126" height="192" rx="7" stroke-dasharray="9 7"/>
+    <rect x="1013" y="132" width="126" height="192" rx="7"/>
+    <path d="M970 189h32m-10-8 10 8-10 8"/>
+    <path d="M833 82h-15v28m316 222h15v-28" stroke-width="4"/>
+  </g>
+  <g font-family="Arial,Helvetica,sans-serif" font-size="14" fill="#a8c5d5">
+    <text x="839" y="310">TRACK 41</text><text x="1015" y="116">TRACK 7</text>
+    <text x="868" y="365" fill="#58dfb4">SECOND LOOK. ONE CONTINUOUS TRACK.</text>
+  </g>
+</svg>

@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argus-yolo-engine"
+version = "0.1.0"
+description = "YOLO sees. Your AI understands. An open engine for detection, visual verification, and scene reasoning."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md"]
+authors = [{name = "Ahmed Elshahawi"}]
+keywords = ["yolo", "computer-vision", "vision-language-model", "object-tracking", "multimodal"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Image Recognition",
+]
+dependencies = ["Pillow>=10.4,<13"]
+
+[project.optional-dependencies]
+yolo = [
+  "ultralytics>=8.3,<9", "opencv-python>=4.10,<5", "lap>=0.5.12,<0.6",
+  "numpy<2; platform_system == 'Darwin' and platform_machine == 'x86_64'",
+  "opencv-python<4.12; platform_system == 'Darwin' and platform_machine == 'x86_64'",
+]
+anthropic = ["anthropic>=0.40,<1"]
+openai = ["openai>=1.55,<3"]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1", "build>=1.2,<2"]
+
+[project.scripts]
+argus-engine = "argus_engine.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/ayshahawy-cmd/argus-engine"
+Issues = "https://github.com/ayshahawy-cmd/argus-engine/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

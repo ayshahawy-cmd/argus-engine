@@ -1,0 +1,13 @@
+{
+  "min_track_seconds": 2.0,
+  "min_crop_height": 60,
+  "reid_max_gap_seconds": 10.0,
+  "reid_max_distance_pixels": 150.0,
+  "color_similarity_threshold": 0.35,
+  "scene_interval_seconds": 60.0,
+  "first_scene_seconds": 2.0,
+  "max_scene_frames": 60,
+  "max_reid_calls": 50,
+  "redact_heads": true,
+  "generate_summary": true
+}
